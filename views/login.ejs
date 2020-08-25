@@ -1,0 +1,27 @@
+
+   <h2>
+      Login.. 
+   </h2>
+   <% if(err){ %>
+      <h1><%=err%></h1>
+      <% } %>
+  
+      <form action="/login" class="ui form" method="POST">
+
+         <div class="ui large form">
+     <div class="three wide field">
+        <label>Email</label>
+       <input  required type="email" name="email" placeholder="Email" >
+      </div>
+      <div class="three wide field">
+         <label>Password</label>
+         <input required type="password" name="password" placeholder="Passoword"  >
+     </div>
+   </div>
+   <br>
+   <button class="ui submit button">Submit</button>
+</form>
+
+<h3>   
+   Don't have an account <strong> <a href="/register">Register</a> </strong>
+</h3> 

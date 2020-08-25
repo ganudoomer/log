@@ -1,0 +1,25 @@
+<h1>Register</h1>
+<% if(err){ %>
+    <h4><%=err%></h4>
+ <% } %>
+<form action="/register" method="POST"> 
+
+    <div class="ui large form">
+        <div class="three wide field">
+            <label>Name</label>
+           <input required type="text" name="name" placeholder="name" >
+          </div>        
+<div class="three wide field">
+   <label>Email</label>
+  <input required type="email" name="email" placeholder="Email" >
+ </div>
+ <div class="three wide field">
+    <label>Password</label>
+    <input required type="password" name="password" placeholder="Passoword"  >
+</div>
+</div>
+<br>
+<button class="ui submit button">Submit</button>
+</form>
+
+<a href="/login">login</a>
